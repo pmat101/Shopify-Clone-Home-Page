@@ -12,12 +12,14 @@
     ></script>
   </head>
   <body>
-    <nav class="flex justify-between px-16 py-4 font-semibold text-neutral-700">
+    <nav
+      class="flex justify-between px-16 py-4 font-semibold text-neutral-700 sticky top-0 bg-white"
+    >
       <div class="flex items-center gap-8">
         <div class="h-8">
           <img src="./images/Shopify_logo_2018.svg" class="max-h-full" alt="" />
         </div>
-        <ul class="flex gap-8">
+        <ul class="hidden lg:flex gap-8">
           <li>Start <span class="text-xs">&or;</span></li>
           <li>Sell <span class="text-xs">&or;</span></li>
           <li>Market <span class="text-xs">&or;</span></li>
@@ -25,19 +27,22 @@
         </ul>
       </div>
       <div class="flex items-center gap-8">
-        <ul class="flex gap-8">
+        <ul class="hidden lg:flex gap-8">
           <li>Pricing</li>
           <li>Learn <span class="text-xs">&or;</span></li>
           <li>Log in</li>
         </ul>
-        <button class="bg-[#004C3F] text-white px-4 py-2 rounded">
+        <button
+          class="hidden lg:block bg-[#004C3F] text-white px-4 py-2 rounded"
+        >
           Try for free
         </button>
+        <i class="fa-solid fa-bars text-xl lg:hidden"></i>
       </div>
     </nav>
     <main id="top">
-      <div class="flex items-center">
-        <div class="basis-1/2 px-20 flex flex-col gap-8">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="basis-1/2 px-40 py-20 lg:px-20 lg:py-0 flex flex-col gap-8">
           <h1 class="text-5xl font-bold text-[#004C3F]">
             The easiest way to sell online in India
           </h1>
@@ -45,13 +50,15 @@
             Try one of the most powerful platforms on the market for free. No
             technical knowledge needed.
           </h4>
-          <form class="flex gap-4">
+          <form class="flex flex-row lg:flex-col xl:flex-row gap-4">
             <input
               type="text"
               placeholder="Enter your email address"
               class="border border-solid border-neutral-500 rounded flex-1 p-4"
             />
-            <button class="bg-[#008060] text-white font-semibold px-8 rounded">
+            <button
+              class="bg-[#008060] text-white font-semibold px-8 py-4 rounded"
+            >
               Try for free
             </button>
           </form>
@@ -65,7 +72,7 @@
         </div>
       </div>
       <div class="bg-[#004C3F] text-white pb-20">
-        <div class="pl-20 pt-20 flex flex-col gap-4">
+        <div class="pl-10 pt-10 lg:pl-20 lg:pt-20 flex flex-col gap-4">
           <h2 class="text-4xl">Bring your business online</h2>
           <p>
             Create an ecommerce website backed by powerful tools that help you
@@ -75,7 +82,9 @@
             >Explore more examples <span>&rarr;</span></a
           >
         </div>
-        <div class="flex px-20 py-12 gap-4">
+        <div
+          class="flex flex-wrap sm:flex-nowrap px-4 py-4 sm:px-10 sm:py-6 lg:px-20 lg:py-12 gap-4"
+        >
           <div>
             <img src="./images/food.jpg" alt="" />
             <p class="text-sm font-medium">FOOD & DRINK</p>
@@ -91,20 +100,22 @@
             <p class="text-sm font-medium">ELECTRONICS</p>
             <p class="text-lg">Crossbeats</p>
           </div>
-          <div>
+          <div class="sm:hidden md:block">
             <img src="./images/beauty.webp" alt="" />
             <p class="text-sm font-medium">BEAUTY</p>
             <p class="text-lg">Mcaffeine</p>
           </div>
-          <div>
+          <div class="sm:hidden lg:block">
             <img src="./images/fashion.webp" alt="" />
             <p class="text-sm font-medium">FASHION</p>
             <p class="text-lg">Bunaai</p>
           </div>
         </div>
         <h3 class="text-3xl p-14">Take the best path forward</h3>
-        <div class="flex justify-evenly">
-          <div class="basis-1/5 flex flex-col gap-2">
+        <div
+          class="flex flex-col sm:flex-row flex-wrap lg:flex-nowrap justify-evenly gap-4 p-4"
+        >
+          <div class="basis-[40%] lg:basis-1/5 flex flex-col gap-2">
             <img src="./images/icons/mkt.jpg" class="w-8" alt="" />
             <p class="font-semibold text-lg">Start an online business</p>
             <p>
@@ -112,7 +123,7 @@
               for a new way to make money.
             </p>
           </div>
-          <div class="basis-1/5 flex flex-col gap-2">
+          <div class="basis-[40%] lg:basis-1/5 flex flex-col gap-2">
             <img src="./images/icons/shop.jpg" class="w-8" alt="" />
             <p class="font-semibold text-lg">Move your business online</p>
             <p>
@@ -120,7 +131,7 @@
               customers without missing a beat.
             </p>
           </div>
-          <div class="basis-1/5 flex flex-col gap-2">
+          <div class="basis-[40%] lg:basis-1/5 flex flex-col gap-2">
             <img src="./images/icons/cycle.jpg" class="w-8" alt="" />
             <p class="font-semibold text-lg">Switch to Shopify</p>
             <p>
@@ -128,7 +139,7 @@
               you're currently using.
             </p>
           </div>
-          <div class="basis-1/5 flex flex-col gap-2">
+          <div class="basis-[40%] lg:basis-1/5 flex flex-col gap-2">
             <img src="./images/icons/people.jpg" class="w-8" alt="" />
             <p class="font-semibold text-lg">Hire a Shopify expert</p>
             <p>
@@ -138,20 +149,26 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col items-center py-20">
-        <h2 class="text-4xl pb-4">With you wherever you're going</h2>
-        <p class="w-5/12 text-xl text-neutral-600 text-center">
+      <div class="flex flex-col items-center py-10 lg:py-20">
+        <h2 class="text-3xl lg:text-4xl pb-4">
+          With you wherever you're going
+        </h2>
+        <p
+          class="w-2/3 lg:w-5/12 text-lg lg:text-xl text-neutral-600 text-center"
+        >
           One platform with all the ecommerce and point of sale features you
           need to start, run, and grow your business.
         </p>
       </div>
-      <div class="flex items-center justify-center gap-8">
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
         <div class="basis-2/5">
           <video autoplay loop>
             <source src="./videos/sell.webm" type="video/webm" />
           </video>
         </div>
-        <div class="basis-2/5 flex flex-col gap-4">
+        <div
+          class="-order-1 lg:order-1 basis-2/5 flex flex-col gap-4 m-20 lg:m-0"
+        >
           <h3 class="text-3xl">Sell everywhere</h3>
           <p class="text-lg text-neutral-600">
             Use one platform to sell products to anyone, anywhere—in person with
@@ -163,8 +180,8 @@
           >
         </div>
       </div>
-      <div class="flex items-center px-24">
-        <div class="flex-1 flex flex-col gap-4">
+      <div class="flex flex-col lg:flex-row items-center px-24">
+        <div class="flex-1 m-20 lg:m-0 flex flex-col gap-4">
           <h3 class="text-3xl">Market your business</h3>
           <p class="text-lg text-neutral-600">
             Take the guesswork out of marketing with built-in tools that help
@@ -178,11 +195,13 @@
           <img src="./images/brochure.webp" alt="" />
         </div>
       </div>
-      <div class="flex items-center px-20">
+      <div class="flex flex-col lg:flex-row items-center px-10 lg:px-20">
         <div class="basis-1/2">
           <img src="./images/manage.png" alt="" />
         </div>
-        <div class="basis-1/2 flex flex-col gap-4 px-24">
+        <div
+          class="-order-1 lg:order-1 basis-1/2 flex flex-col gap-4 px-12 lg:px-24 m-20 lg:m-0"
+        >
           <h3 class="text-3xl">Manage everything</h3>
           <p class="text-lg text-neutral-600">
             Gain the insights you need to grow—use a single dashboard to manage
@@ -193,11 +212,11 @@
           >
         </div>
       </div>
-      <div class="bg-[#F3FCF4] p-20">
-        <h2 class="text-[#004c3f] pb-20 text-3xl">
+      <div class="bg-[#F3FCF4] p-10 md:p-20">
+        <h2 class="text-[#004c3f] pb-10 md:pb-20 text-3xl">
           Explore more from Shopify in India
         </h2>
-        <div class="bg-white flex mx-4 gap-8">
+        <div class="bg-white flex flex-col sm:flex-row mx-4 gap-8">
           <div class="basis-1/2 flex flex-col gap-4 p-4 pr-8">
             <p class="font-bold">START</p>
             <h4 class="text-2xl">
@@ -212,18 +231,26 @@
               >Browse Experts in India <span>&rarr;</span></a
             >
           </div>
-          <div class="basis-1/2">
-            <img src="./images/india.webp" alt="" />
+          <div
+            class="-order-1 sm:order-1 basis-1/2 flex justify-center overflow-x-hidden md:overflow-x-auto"
+          >
+            <img
+              src="./images/india.webp"
+              class="h-full md:h-fit max-w-none md:max-w-full"
+              alt=""
+            />
           </div>
         </div>
       </div>
-      <div class="py-20">
-        <div class="max-w-[60%] pl-24 flex flex-col gap-8">
-          <h2 class="text-3xl">
+      <div class="py-4 sm:py-10 lg:py-20">
+        <div
+          class="sm:max-w-[90%] lg:max-w-[60%] pl-12 sm:pl-24 flex flex-col gap-8"
+        >
+          <h2 class="text-2xl sm:text-3xl">
             Empowering independent business <br />
             owners everywhere
           </h2>
-          <h4 class="text-2xl">
+          <h4 class="text-xl sm:text-2xl">
             Millions of businesses in
             <span class="font-bold">175 countries</span> around the world have
             made over <span class="font-bold">$496 billion USD</span> in sales
@@ -234,21 +261,29 @@
           >
         </div>
         <div class="flex justify-center">
-          <img src="./images/globe.png" class="max-w-[60%]" alt="" />
+          <img
+            src="./images/globe.png"
+            class="max-w-[90%] lg:max-w-[60%]"
+            alt=""
+          />
         </div>
       </div>
-      <div class="flex gap-8 bg-[#002E25] text-white m-20">
-        <div class="basis-1/2 flex justify-center overflow-x-hidden">
+      <div
+        class="flex flex-col sm:flex-row gap-8 bg-[#002E25] text-white m-10 lg:m-20"
+      >
+        <div class="basis-1/2 flex justify-center overflow-hidden">
           <img
             src="./images/alicia.jpg"
-            class="h-full max-w-fit w-auto"
+            class="sm:h-full sm:max-w-fit sm:w-auto"
             alt=""
           />
         </div>
         <div
-          class="basis-1/2 flex flex-col justify-center items-center gap-8 py-16 px-20"
+          class="basis-1/2 flex flex-col justify-center items-center gap-8 py-8 px-10 lg:py-16 lg:px-20"
         >
-          <h3 class="text-3xl font-semibold leading-normal text-center">
+          <h3
+            class="text-xl lg:text-3xl font-semibold leading-normal text-center"
+          >
             “Shopify was my knight in shining armor when I exhausted every other
             possibility of getting my online store up and running. It was
             stunningly easy to use, with more features and plug-ins that I
@@ -258,7 +293,9 @@
           <p class="text-lg font-medium">Alicia | Alicia Souza</p>
         </div>
       </div>
-      <div class="flex justify-between px-24 pb-20">
+      <div
+        class="flex flex-wrap justify-between px-12 pb-10 lg:px-24 lg:pb-20 gap-8"
+      >
         <img src="./images/icons/bajaao.webp" alt="" />
         <img src="./images/icons/johnjacobs.webp" alt="" />
         <img src="./images/icons/kylie.avif" alt="" />
@@ -267,13 +304,17 @@
         <img src="./images/icons/starstruck.webp" alt="" />
         <img src="./images/icons/mcaffeine.webp" alt="" />
       </div>
-      <div class="bg-[#FBF7ED] flex">
-        <div class="basis-1/2 py-24 pl-24 pr-8">
-          <h2 class="text-4xl leading-snug pb-20">
+      <div class="bg-[#FBF7ED] flex flex-col md:flex-row">
+        <div
+          class="basis-2/3 lg:basis-1/2 py-12 pl-12 pr-4 md:py-24 md:pl-24 md:pr-8"
+        >
+          <h2 class="text-3xl md:text-4xl leading-snug pb-20">
             Get the help you need, <br />
             every step of the way
           </h2>
-          <div class="flex flex-wrap justify-between gap-8">
+          <div
+            class="flex flex-col md:flex-row flex-wrap justify-between gap-8"
+          >
             <div class="flex-1 flex flex-col gap-4">
               <p class="font-semibold text-lg">Shopify support</p>
               <p class="text-neutral-600">
@@ -306,14 +347,20 @@
             </div>
           </div>
         </div>
-        <div class="basis-1/2">
-          <img src="./images/help.webp" alt="" />
+        <div
+          class="basis-1/3 lg:basis-1/2 overflow-x-hidden lg:overflow-x-auto flex justify-center"
+        >
+          <img
+            src="./images/help.webp"
+            class="h-full lg:h-fit max-w-none lg:max-w-full"
+            alt=""
+          />
         </div>
       </div>
       <div>
         <div class="py-24 flex flex-col items-center gap-4">
           <h2 class="text-3xl">Start your business journey with Shopify</h2>
-          <p class="text-lg text-neutral-600">
+          <p class="text-lg text-neutral-600 text-center px-8">
             Try Shopify for free, and explore all the tools and services you
             need to start, run, and grow your business.
           </p>
@@ -324,14 +371,16 @@
           </button>
         </div>
         <a
-          class="block text-right pr-24 pb-8 text-[#004c3f] font-semibold text-lg"
+          class="block text-center md:text-right pr-0 md:pr-24 pb-8 text-[#004c3f] font-semibold text-lg"
           href="#top"
         >
           Back to top &uarr;
         </a>
       </div>
-      <footer class="bg-[#002E25] text-white px-24">
-        <ul class="py-4 font-semibold flex gap-4">
+      <footer class="bg-[#002E25] text-white px-12 md:px-24">
+        <ul
+          class="py-4 font-semibold flex justify-center md:justify-start gap-4"
+        >
           <li>About</li>
           <li>Careers</li>
           <li>Press and Media</li>
@@ -340,7 +389,7 @@
         </ul>
         <hr class="border-neutral-500" />
         <div
-          class="py-4 flex justify-between leading-loose text-neutral-400 text-sm"
+          class="py-4 flex flex-wrap md:flex-nowrap justify-between gap-4 leading-loose text-neutral-400 text-sm"
         >
           <ul>
             <li class="font-bold text-white">ONLINE STORE</li>
@@ -394,8 +443,10 @@
           </ul>
         </div>
         <hr class="border-neutral-500" />
-        <div class="py-8 flex justify-between">
-          <div class="flex gap-6">
+        <div
+          class="py-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <div class="flex flex-wrap md:flex-nowrap gap-6">
             <i
               class="fa-brands fa-facebook-f text-[#002E25] bg-white text-base px-2 rounded-full"
             ></i>
